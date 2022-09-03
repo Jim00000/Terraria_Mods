@@ -1,0 +1,3 @@
+displayName = Persistent Buff Effect
+author = Jim
+version = 0.1

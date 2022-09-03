@@ -1,0 +1,3 @@
+displayName = No Corruption & Crimson biome
+author = Jim
+version = 0.1
