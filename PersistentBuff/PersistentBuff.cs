@@ -19,9 +19,34 @@ namespace PersistentBuff
 			switch(type)
             {
 				/* Consumables */
-				//Reduces the chance of consuming any ammunition by 20%
 				case BuffID.AmmoReservation:
+				case BuffID.Archery:
+				case BuffID.Builder:
+				case BuffID.Crate:
+				case BuffID.Dangersense:
+				case BuffID.Endurance:
+				case BuffID.Fishing:
+				case BuffID.Heartreach:
+				case BuffID.Hunter:
+				case BuffID.Ironskin:
+				case BuffID.Lifeforce:
+				case BuffID.Lucky:
+				case BuffID.MagicPower:
+				case BuffID.ManaRegeneration:
+				case BuffID.Mining:
+				case BuffID.NightOwl:
+				case BuffID.ObsidianSkin:
+				case BuffID.Rage:
+				case BuffID.Regeneration:
+				case BuffID.Shine:
+				case BuffID.Sonar:
 				case BuffID.Spelunker:
+				case BuffID.Summoning:
+				case BuffID.Swiftness:
+				case BuffID.Titan:
+				case BuffID.WaterWalking:
+				case BuffID.Warmth:
+				case BuffID.Wrath:
 				/* Activated Furniture */
 				case BuffID.AmmoBox:
 				case BuffID.Bewitched:
@@ -38,7 +63,7 @@ namespace PersistentBuff
 		{
 			if(player.HasBuff(type) && IsBuffType(type))
             {
-				player.buffTime[buffIndex] = 60 * 60 * 10;
+				player.buffTime[buffIndex] = 60 * 60 * 5 - 1;
 			}
 		}
 	}
