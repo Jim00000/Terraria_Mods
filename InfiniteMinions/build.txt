@@ -1,0 +1,3 @@
+displayName = Infinite Minions
+author = Jim
+version = 0.1
